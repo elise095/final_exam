@@ -4,11 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To do App</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./resources/css/reset.css">
+  <link rel="stylesheet" href="./resources/css/style.css">
 </head>
 <body>
-  <p id="toDo">Type something</p>
-
+  <section>
+    <input type="text" placeholder="Type something..." id='input'>
+    <input type="button" value="Add task" id='button'>
+  </section>
+  <section id="section2">
+    <p id='noText'>You can't add tasks with no text</p>
+    <ul>
+      <li id='allDoneText'>You are all done, add some new tasks.</li>
+    </ul>
+  </section>
+ 
   <script src="script.js"></script>
 </body>
 </html>
