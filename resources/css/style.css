@@ -12,6 +12,7 @@ section{
   color: #324376;
   background-color: #617fde;
   height: 50px;
+  text-align: center;
 }
 #input:hover{
   background-color: #617fdea0;
@@ -23,6 +24,7 @@ section{
   color: #D8DCFF;
   background-color: #546CB6;
   height: 50px;
+  font-weight: bold;
 }
 #button:hover{
   background-color: #435A9D;
@@ -32,16 +34,33 @@ section{
 }
 #noText{
   visibility: hidden;
+  color: red;
 }
 ul{
   display: flex;
 }
 li{
   justify-content: center;
-  text-align: center;
-  height: 50px;
+  text-align: left;
   background-color: #f6af32;
   color: #333;
   width: 60%;
-  margin: 20px;
+  margin: 1% 20%;
+  padding: 25px 25px;
+}
+li:hover{
+  filter: invert(0.2);
+  text-decoration: line-through;
+}
+#checkmark{
+  visibility: hidden;
+}
+#allDoneText{
+  text-align: center;
+  background-color:  rgb(236, 236, 236);
+  font-weight: bold;
+  color: #333;
+}
+.urgent{
+  background-color: #d44b44;
 }
