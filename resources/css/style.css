@@ -4,6 +4,7 @@ body{
 section{
   width: 100%;
   display: flex;
+  padding-bottom: 20px;
 }
 #task {
   width: 80%;
@@ -17,6 +18,9 @@ section{
 }
 #task:hover{
   background-color: #617fdea0;
+}
+::placeholder{
+  color: #324376;
 }
 #button{
   width: 20%;
@@ -34,7 +38,7 @@ section{
 #noText{
   text-align: center;
   color: red;
-  padding: 20px;
+  padding: 15px;
 }
 #section2{
   display:block;
@@ -51,9 +55,16 @@ li{
   margin: 1% 20%;
   padding: 25px 25px;
 }
-li:hover{
+li:hover:not(#allDoneText){
   filter: invert(0.2);
   text-decoration: line-through;
+}
+#checkmark{
+  display:none;
+  padding-right: 15px;
+}
+#checkmark:hover{
+  display: inline;
 }
 #allDoneText{
   text-decoration: none;
@@ -61,11 +72,11 @@ li:hover{
   background-color:  rgb(236, 236, 236);
   font-weight: bold;
   color: #333;
+  padding: 25px;
 }
 .urgent{
   background-color: #d44b44;
 }
-
 .none{
   display: none;
 }
